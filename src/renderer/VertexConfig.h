@@ -31,7 +31,7 @@ SOFTWARE.
 namespace swr {
 
 /// Maximum supported number of vertex attributes.
-const int MaxVertexAttribs = 8;  
+const int MaxVertexAttribs = 8;
 
 /// Vertex shader output.
 typedef RasterizerVertex VertexShaderOutput;
@@ -40,4 +40,3 @@ typedef RasterizerVertex VertexShaderOutput;
 typedef const void *VertexShaderInput[MaxVertexAttribs];
 
 } // end namespace swr
-

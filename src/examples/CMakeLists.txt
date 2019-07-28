@@ -10,7 +10,7 @@ if (OPENMP_FOUND)
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 endif ()
 
-find_package(SDL2 REQUIRED)
+find_package(SDL2 REQUIRED HINTS cget/lib/cmake/SDL2)
 find_package(SDL2_image REQUIRED)
 
 include_directories(${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
